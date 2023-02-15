@@ -10,10 +10,6 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 import CardAvatar from "../CardAvatar";
 
-import slide_image_1 from "../../assets/avatar1.jpg";
-import slide_image_2 from "../../assets/avatar2.jpg";
-import slide_image_3 from "../../assets/avatar3.jpg";
-
 const OurClinic = () => {
   const cardsInfo = [
     { name: "Dra. Nathália", office: "Sócia diretora", url: "avatar1.jpg" },

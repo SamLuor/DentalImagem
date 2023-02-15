@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import "./style.css";
 
@@ -11,19 +12,28 @@ import OurClinic from "../../Components/OurClinic";
 import Testimonials from "../../Components/Testimonials";
 import Contact from "../../Components/Contact";
 import Footer from "../../Components/Footer";
+import ModalBudget from "../../Components/ModalBudget";
 
 const Main = () => {
   const [visible, setVisible] = React.useState(false);
+  const [modalVisible, setModalVisible] = React.useState(false);
 
   const toggleSide = React.useCallback(() => {
     setVisible((e) => !e);
   }, []);
 
+  // const handleScroll = React.useCallback(() => {
+  //    const navbar = $(".nav-header")
+  //    console.log(navbar["0"])
+  //   //  if(navbar)
+  //   //  navbar["0"].classList.add("active")
+  // },[])
+
   return (
-    <div>
+    <div className="overflow-y-scroll">
       <Header toggleSide={toggleSide} />
-      <div className="flex flex-col">
-        <ContentOne />
+      <div className="flex flex-col testando">
+        <ContentOne setVisible={setModalVisible} />
         <Services />
         <ContentSecond />
         <About />
@@ -42,6 +52,7 @@ const Main = () => {
         <Footer />
       </div>
       <SidebarComp toggleSide={toggleSide} visible={visible} />
+      <ModalBudget visible={modalVisible} setVisible={setModalVisible} />
     </div>
   );
 };

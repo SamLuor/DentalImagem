@@ -5,7 +5,10 @@
   @apply w-44 text-gray-600 text-2xl border-b-2 border-b-gray-300 mt-20 mb-4;
 }
 .container-our-clinic p {
-  @apply text-gray-700 w-96;
+  max-width: 500px;
+  min-width: 300px;
+  width: 50vw;
+  @apply text-gray-700;
 }
 
 .swiper {

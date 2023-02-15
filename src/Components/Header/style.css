@@ -16,7 +16,7 @@
   @apply 0:inline sm:hidden self-center;
 }
 .nav-header .nav a {
-  background-image: linear-gradient(#EBEBEB, #EBEBEB);
+  background-image: linear-gradient(#ebebeb, #ebebeb);
   background-repeat: no-repeat;
   background-size: 0% 2px;
   background-position: center bottom;

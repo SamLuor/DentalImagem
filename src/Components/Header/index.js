@@ -8,7 +8,7 @@ const Header = ({ toggleSide }) => {
       <img src={Logo} alt="logo da dentalimagem" />
       <div className="nav">
         <a href="#inicio">INICIO</a>
-        <a href="#serviços">SERVIÇOS</a>
+        <a href="#servicos">SERVIÇOS</a>
         <a href="#sobre">SOBRE</a>
         <a href="#contato">CONTATO</a>
       </div>

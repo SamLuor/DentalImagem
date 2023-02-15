@@ -15,10 +15,10 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="grid place-items-center py-10">
+    <section className="grid place-items-center py-10" id="servicos">
       <h2 className="text-2xl font-medium text-gray-600">Serviços</h2>
       <div className="container-services">
-        <DeferredContent onLoad={showItem}>
+        <DeferredContent  onLoad={showItem}>
           <Card
             className="card-hover"
             subTitle={<h2 className="text-lg font-medium">Scanner 3D</h2>}

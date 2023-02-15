@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 
 import { Avatar } from "primereact/avatar";
-import { Rating } from "primereact/rating";
 
 const CardTestimonial = ({ photo, name, comment }) => {
   return (

@@ -6,7 +6,7 @@ const About = () => {
   const imgs = ["gallery1", "gallery2", "gallery3", "gallery4"];
 
   return (
-    <section className="content-three">
+    <section className="content-three" id="sobre">
       <div className="header-content">
         <h2>Sobre nós</h2>
         <p>
